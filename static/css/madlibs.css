@@ -1,12 +1,14 @@
 
 .title {
-  font-family: sans-serif;
+  font-family: "Gill Sans", sans-serif;
   color: whitesmoke;
+  padding: 10px;
 }
 
 p {
   font-family: sans-serif;
   color: whitesmoke;
+  font-size: large;
 }
 
 input {
@@ -28,13 +30,26 @@ label {
   color: black;
 }
 
+legend {
+  font-family: sans-serif;
+  color: whitesmoke;
+}
+
+fieldset {
+  padding: 15px;
+  margin: 5px;
+}
+
+
 .background {
   background-color: rgb(53, 52, 52);
+  background-size: cover;
+  text-align: center;
+  margin: 25%
 }
 
 .block {
-  padding: 20px;
-  width: 50%;
+  padding: 50px;
   border-style: double;
   border-width: 8px;
   background-color: whitesmoke;

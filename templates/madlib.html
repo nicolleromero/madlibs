@@ -6,10 +6,52 @@
 
 <div class="block">
   <p class="madlib-text">
-    There once was a {{ pets }} sitting in the Hackbright Lab.
-    When {{ person_name }} went to pick it up, it turned
+    There once was
+
+    {% for pet in pets %}
+
+    {% if loop.length == 1 %}
+    a {{ pet }}
+
+    {% elif loop.length == 2 %}
+
+    {% if loop.first %}
+    a {{ pet }}
+    {% elif loop.last %}
+    and a {{ pet }}
+    {% endif %}
+
+    {% else %}
+
+    {% if loop.last %}
+    and a {{ pet }}
+    {% else %}
+    a {{ pet }},
+    {% endif %}
+
+    {% endif %}
+    {% endfor %}
+
+    sitting in the Hackbright Lab.
+    When {{ person_name }} went to pick
+
+    {% if pets|length > 1 %}
+    them up, they
+    {% else %}
+    it up, it
+    {% endif %}
+
+    turned
     <span class={{ color }}>{{ color }}</span>,
-    made an incredibly {{ noun }} face, and burst
+    made
+
+    {% if pets|length > 1 %}
+    {{ noun }} faces,
+    {% else %}
+    a {{ noun }} face,
+    {% endif %}
+
+    and burst
     into flames <span>🔥</span> in a totally {{ adjective }} way.
   </p>
 </div>

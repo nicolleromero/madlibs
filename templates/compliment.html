@@ -4,7 +4,37 @@
 
 {% block content %}
 
-<p>Hi {{ person }}! I think you're {{ compliment }}!</p>
+<p>Hi {{ person }}! </p>
+<p>
+  I think you're
+
+  {% for compliment in compliments %}
+
+  {% if loop.length == 1 %}
+  {{ compliment }}
+  {% endif %}
+
+  {% if loop.length == 2 %}
+
+  {% if loop.first %}
+  {{ compliment }}
+  {% elif loop.last %}
+  and {{ compliment }}
+  {% endif %}
+  {% endif %}
+
+  {% if loop.length > 2 %}
+
+  {% if loop.last %}
+  and {{ compliment }}!
+  {% else %}
+  {{ compliment }},
+  {% endif %}
+
+  {% endif %}
+  {% endfor %}
+</p>
+
 <form action="/game">
   <p>Would you like to play a game?</p>
   <div>
