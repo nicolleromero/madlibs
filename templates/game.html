@@ -4,10 +4,10 @@
 
 {% block content %}
 
-<p>Please enter a person, a color, a noun, and an adjective.</p>
+<p>Please choose a person, a color, an emotion, an adjective, and an animal.</p>
 
 <form action="/madlib">
-  <div><label>Person:</label> <input type="text" name="person_name"></div><br>
+  <div><label>Person:</label> <input class="field" type="text" name="person_name"></div><br>
   <p>Choose a color:</p>
   <div>
     <input type="radio" id="color" name="color" value="red">
@@ -22,21 +22,29 @@
     <label for="purple">purple</label>
   </div>
   <div>
-    <input type="radio" id="color" name="color" value="yellow">
-    <label for="yellow">yellow</label>
+    <input type="radio" id="color" name="color" value="orange">
+    <label for="orange">orange</label>
   </div><br>
-  <div><label>Noun:</label> <input type="text" name="noun"></div><br>
-  <div><label>Adjective:</label> <input type="text" name="adjective"></div><br>
+  <div><label for="emotion-select">Emotion: </label>
+    <select name="noun" id="emotion-select">
+      <option value="">--Please choose an emotion--</option>
+      <option value="scared 😱">Scared</option>
+      <option value="angry 🤬">Angry</option>
+      <option value="surprised 😮">Surpised</option>
+      <option value="crazy 🤪">Crazy</option>
+    </select>
+  </div><br>
+  <div><label>Adjective:</label> <input class="field" type="text" name="adjective"></div><br>
 
-  <label for="pet-select">Pet:</label>
+  <label for="pet-select">Animal:</label>
   <select name="pets" id="pet-select">
-    <option value="">--Please choose an option--</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
-    <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option>
+    <option value="">--Please choose an animal--</option>
+    <option value="dog 🐶">Dog</option>
+    <option value="cat 🐈">Cat</option>
+    <option value="hamster 🐹">Hamster</option>
+    <option value="parrot 🦜">Parrot</option>
+    <option value="spider 🕷">Spider</option>
+    <option value="fox 🦊">Fox</option>
   </select><br><br>
   <input class="button-text" type="submit" value="Submit">
   </button>

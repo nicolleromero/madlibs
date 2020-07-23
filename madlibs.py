@@ -44,7 +44,7 @@ def greet_person():
 
 @app.route('/game')
 def show_madlib_form():
-    """Something here"""
+    """Collect input from user to assign madlib terms."""
 
     game_response = request.args.get("yes_no")
 
@@ -56,7 +56,7 @@ def show_madlib_form():
 
 @app.route('/madlib')
 def show_madlib():
-    """Something here"""
+    """Build and display the madlib."""
 
     person_name = request.args.get("person_name")
     color = request.args.get("color")

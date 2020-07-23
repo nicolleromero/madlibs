@@ -14,6 +14,11 @@ input {
   color: whitesmoke;
 }
 
+.field {
+  font-family: sans-serif;
+  color: black;
+}
+
 label {
   font-family: sans-serif;
   color: whitesmoke;
@@ -39,4 +44,20 @@ label {
   color: black;
   font-family: fantasy;
   font-size: larger;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.purple {
+  color: purple;
+}
+
+.orange {
+  color: orange;
 }
