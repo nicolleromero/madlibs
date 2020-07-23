@@ -1,8 +1,42 @@
+
 .title {
   font-family: sans-serif;
-  background-color: cornflowerblue;
+  color: whitesmoke;
 }
 
 p {
   font-family: sans-serif;
+  color: whitesmoke;
+}
+
+input {
+  font-family: sans-serif;
+  color: whitesmoke;
+}
+
+label {
+  font-family: sans-serif;
+  color: whitesmoke;
+}
+
+.button-text {
+  color: black;
+}
+
+.background {
+  background-color: rgb(53, 52, 52);
+}
+
+.block {
+  padding: 20px;
+  width: 50%;
+  border-style: double;
+  border-width: 8px;
+  background-color: whitesmoke;
+}
+
+.madlib-text {
+  color: black;
+  font-family: fantasy;
+  font-size: larger;
 }

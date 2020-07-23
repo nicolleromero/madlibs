@@ -65,11 +65,12 @@ def show_madlib():
     pets = request.args.get("pets")
 
     return render_template("madlib.html",
+                           pets=pets,
                            person_name=person_name,
                            color=color,
                            noun=noun,
                            adjective=adjective,
-                           pets=pets)
+                           )
 
 
 if __name__ == '__main__':

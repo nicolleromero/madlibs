@@ -7,26 +7,26 @@
 <p>Please enter a person, a color, a noun, and an adjective.</p>
 
 <form action="/madlib">
-  <div>Person: <input type="text" name="person_name"></div><br>
+  <div><label>Person:</label> <input type="text" name="person_name"></div><br>
   <p>Choose a color:</p>
   <div>
-    <input type="radio" id="color" name="color" value="color">
+    <input type="radio" id="color" name="color" value="red">
     <label for="red">red</label>
   </div>
   <div>
-    <input type="radio" id="color" name="color" value="color">
+    <input type="radio" id="color" name="color" value="blue">
     <label for="blue">blue</label>
   </div>
   <div>
-    <input type="radio" id="color" name="color" value="color">
+    <input type="radio" id="color" name="color" value="purple">
     <label for="purple">purple</label>
   </div>
   <div>
-    <input type="radio" id="color" name="color" value="color">
+    <input type="radio" id="color" name="color" value="yellow">
     <label for="yellow">yellow</label>
   </div><br>
-  <div>Noun: <input type="text" name="noun"></div><br>
-  <div>Adjective: <input type="text" name="adjective"></div><br>
+  <div><label>Noun:</label> <input type="text" name="noun"></div><br>
+  <div><label>Adjective:</label> <input type="text" name="adjective"></div><br>
 
   <label for="pet-select">Pet:</label>
   <select name="pets" id="pet-select">
@@ -38,7 +38,7 @@
     <option value="spider">Spider</option>
     <option value="goldfish">Goldfish</option>
   </select><br><br>
-  <input type="submit" value="Submit">
+  <input class="button-text" type="submit" value="Submit">
   </button>
 </form>
 
