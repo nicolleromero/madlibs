@@ -1,9 +1,22 @@
-<!doctype html>
-<html>
-<head>
-  <title>A Compliment</title>
-</head>
-<body>
-    Hi {{ person }}! I think you're {{ compliment }}!
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}compliment{% endblock %}
+
+{% block content %}
+
+<p>Hi {{ person }}! I think you're {{ compliment }}!</p>
+<form action="/game">
+  <p>Would you like to play a game?</p>
+  <div>
+    <input type="radio" id="yes" name="yes_no" value="yes">
+    <label for="yes">Yes</label>
+  </div>
+  <div>
+    <input type="radio" id="no" name="yes_no" value="no">
+    <label for="no">No</label>
+  </div><br>
+  <input type="submit" value="Submit">
+  </button>
+</form>
+
+{% endblock %}
