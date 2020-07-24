@@ -37,7 +37,6 @@ legend {
 
 fieldset {
   padding: 15px;
-  margin: 5px;
 }
 
 
@@ -45,7 +44,7 @@ fieldset {
   background-color: rgb(53, 52, 52);
   background-size: cover;
   text-align: center;
-  margin: 25%
+  margin: 15%
 }
 
 .block {
